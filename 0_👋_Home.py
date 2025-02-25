@@ -4,7 +4,7 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Sam's Portfolio",
     page_icon="📊",
 )
 
@@ -14,17 +14,16 @@ with st.sidebar:
     st.image("eae_img.png", width=200)
     st.header("Introduction to Programming Languages for Data")
     st.write("###")
-    st.write("***Final Project - Dec 2023***")
-    st.write("**Author:** <Your Name>")
+    st.write("***Final Project - Dec 2025***")
+    st.write("**Author:** Samantha Alcaraz")
     st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
 # ----- Top title -----
-st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Samantha</h1></div>""", unsafe_allow_html=True)  # TODO: Add your name
-
+st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;"> Welcome ✌🏼!</h1></div>""", unsafe_allow_html=True)  
 
 # ----- Profile image file -----
-profile_image_file_path = "samsprofile.jpg"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+profile_image_file_path = "samsprofile.jpg"      
 
 with open(profile_image_file_path, "rb") as img_file:
     img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -39,7 +38,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+current_role = "Deeply passionate about Nature, Art and Technology"
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -51,19 +50,19 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies> 
+- I am Mexican woman in STEM, dedicated to driving Data-Driven Solutions for a more sustainable and greener future ✨🕊️🍃
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- B.S. in Sustainable Development Engineering 🎓 and M.Sc. in Big Data and Analytics 📊
 
-- ❤️ <Your Passion and/or Interests>
+- Constantly reflecting on life's big questions, humanity's purpose, and how we can live in greater harmony with nature 🌍
 
-- 🤖 <Your Personal Projects>
+- Developed first business model focused on transforming a community through the production and sale of Dahlias in Mexico 🌸
 
-- 🏂 <Your Hobbies>
+- I love painting 🎨, reading 📚, and dancing 🪩
 
-- 📫 How to reach me: <Your Email>
+- How to reach me 📫 samantha.alcarazgallardo@gmail.com 
 
-- 🏠 Barcelona
+- Mexico City, Mexico ✈️  Barcelona, Spain 
 """)
 
 # Feel free to add other points like your Linkedin, Github, Social Media, etc.
